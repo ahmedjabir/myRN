@@ -1,6 +1,0 @@
-module Pods_AndroidExp {
-  umbrella header "Pods-AndroidExp-umbrella.h"
-
-  export *
-  module * { export * }
-}
