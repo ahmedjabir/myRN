@@ -1,0 +1,6 @@
+module Pods_AndroidExp_AndroidExpTests {
+  umbrella header "Pods-AndroidExp-AndroidExpTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
