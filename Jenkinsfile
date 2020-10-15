@@ -7,8 +7,10 @@ def Publish = 'Publish'
 
 pipeline {
     agent any
-    //tools {nodejs "nodejs"}
-    stages {       
+    
+    tools {nodejs "node"}
+    
+    stages {
 	    stage(CheckOut) {
 	        steps {
 		        checkout scm
@@ -27,9 +29,9 @@ pipeline {
                     ls -lah
                 '''
                 echo '====== Build Started ======'
-                sh 'npm install'
-                sh 'npx pod-install'
-		        sh 'xcodebuild clean -workspace ios/AndroidExp.xcworkspace -sdk iphoneos -scheme AndroidExp build -destination "platform=iOS Simulator,name=iPhone 8,OS=13.3"'
+                sh 'npm config ls'
+                //sh 'npx pod-install'
+		        //sh 'xcodebuild clean -workspace ios/AndroidExp.xcworkspace -sdk iphoneos -scheme AndroidExp build -destination "platform=iOS Simulator,name=iPhone 8,OS=13.3"'
 		        echo '====== Build Ended ======'
             }
         	post {
