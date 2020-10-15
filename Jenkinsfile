@@ -75,7 +75,7 @@ pipeline {
                      
                      
             appCenter apiToken: '30d8938de76409402011c7a9b5dd47bd68e113b0',
-                        appName: 'Markkit-QA',
+                        appName: 'Manara-1',
                         buildVersion: '',
                         distributionGroups: 'Maqta-Testers',
                         notifyTesters: true,
