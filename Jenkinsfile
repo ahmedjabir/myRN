@@ -30,6 +30,7 @@ pipeline {
                 '''
                 echo '====== Build Started ======'
                 sh 'npm config ls'
+                sh 'npm install'
                 //sh 'npx pod-install'
 		        //sh 'xcodebuild clean -workspace ios/AndroidExp.xcworkspace -sdk iphoneos -scheme AndroidExp build -destination "platform=iOS Simulator,name=iPhone 8,OS=13.3"'
 		        echo '====== Build Ended ======'
